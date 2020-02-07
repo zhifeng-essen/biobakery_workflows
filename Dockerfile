@@ -9,5 +9,5 @@ RUN apt-get update && \
     /opt/conda/bin/R -q -e "install.packages('vegan', repos='http://cran.r-project.org')" && \
     /opt/conda/bin/conda install samtools=0.1.19 && \
     ln -s /opt/conda/bin/metaphlan_databases /opt/conda/bin/db_v20 && \
-    /opt/conda/bin/conda clean --all --yes
-    
+    /opt/conda/bin/conda clean --all --yes && \
+    apt-get clean
