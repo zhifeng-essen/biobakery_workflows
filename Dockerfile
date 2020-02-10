@@ -13,3 +13,5 @@ RUN /opt/conda/bin/conda install samtools=0.1.19
 
 # symlink the databases to the prior location for metaphlan extract markers script
 RUN ln -s /opt/conda/bin/metaphlan_databases /opt/conda/bin/db_v20
+
+RUN /opt/conda/bin/conda clean --yes --all
